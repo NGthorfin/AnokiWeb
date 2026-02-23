@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Anoki | Serveur Discord de Dessin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+            color: white;
+        }
+
+        header {
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-weight: 800;
+            font-size: 28px;
+            color: #ff8bdc;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-left: 25px;
+            font-weight: 400;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff8bdc;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 10%;
+        }
+
+        .hero-content h2 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .hero-content span {
+            color: #ff8bdc;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #ff8bdc;
+            color: #1e1e2f;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .card {
+            background: #2f2f4a;
+            padding: 30px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: #3a3a5f;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #ff8bdc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #151522;
+            margin-top: 50px;
+            font-size: 14px;
+            opacity: 0.6;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Anoki</h1>
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#features">Fonctionnalités</a>
+        <a href="#join">Rejoindre</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Bienvenue sur <span>Anoki</span></h2>
+        <p>Un serveur Discord dédié aux passionnés de dessin, d'art digital et de créativité ✨</p>
+        <a href="https://discord.gg/anoki" target="_blank" class="btn">Rejoindre le serveur</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 style="text-align:center; margin-bottom:40px;">Pourquoi Anoki ?</h2>
+    <div class="features">
+        <div class="card">
+            <h3>🎨 Communauté Artistique</h3>
+            <p>Partage tes créations et découvre celles des autres membres.</p>
+        </div>
+        <div class="card">
+            <h3>🖌️ Conseils & Feedback</h3>
+            <p>Reçois des critiques constructives pour progresser rapidement.</p>
+        </div>
+        <div class="card">
+            <h3>🏆 Événements & Défis</h3>
+            <p>Participe à des challenges artistiques réguliers.</p>
+        </div>
+    </div>
+</section>
+
+<section id="join" style="text-align:center;">
+    <h2 style="margin-bottom:20px;">Prêt à dessiner avec nous ?</h2>
+    <p style="margin-bottom:30px;">Rejoins Anoki et développe ton talent dans une ambiance bienveillante.</p>
+    <a href="https://discord.gg/anoki" target="_blank" class="btn">Je rejoins Anoki</a>
+</section>
+
+<footer>
+    © 2026 Anoki - Serveur Discord de dessin | Créé avec ❤️
+</footer>
+
+</body>
+</html>
